@@ -1,0 +1,25 @@
+{
+  "name": "slug.js",
+  "displayName": "slug.js",
+  "version": "1.0.1",
+  "description": "slug.js is a node package to slug string",
+  "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxgicoxx/slug.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xxgicoxx/slug.js/issues"
+  },
+  "homepage": "https://github.com/xxgicoxx/slug.js#readme",
+  "keywords": [
+    "slug",
+    "string"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/xxgicoxx/slug.js.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[user]
+	name = Giovani de Oliveira
+	email = giovanioliveira@outlook.com.br
