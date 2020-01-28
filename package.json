@@ -2,7 +2,7 @@
   "name": "slug.js",
   "displayName": "slug.js",
   "version": "1.0.1",
-  "description": "slug.js is a node package to slug string",
+  "description": "Node package to slug string",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",
   "main": "index.js",

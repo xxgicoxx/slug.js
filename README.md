@@ -1,5 +1,5 @@
 # slug.js
-slug.js is a node package to slug string.
+Node package to slug string.
 
 ### Installation
 ````
