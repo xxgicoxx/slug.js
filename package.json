@@ -18,7 +18,14 @@
   },
   "homepage": "https://github.com/xxgicoxx/slug.js#readme",
   "keywords": [
+    "slugjs",
     "slug",
-    "string"
-  ]
+    "string",
+    "url"
+  ],
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  }
 }
