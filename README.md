@@ -1,5 +1,5 @@
 # slug.js
-Node.js package to slug string.
+Node.js package for slug string.
 
 <p align="center">
   <img src="https://i.imgur.com/YHCWihh.png">
