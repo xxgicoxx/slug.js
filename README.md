@@ -1,44 +1,40 @@
 # slug.js
-Node package to slug string.
+Node.js package to slug string.
 
 <p align="center">
   <img src="https://i.imgur.com/YHCWihh.png">
 </p>
 
-### Installation
+# Prerequisites
+* [Node.js](https://nodejs.org/en/)
+
+# Installation
 ````
 npm install slug.js
 ````
 
-### Example
+# Example
 ```javascript
 const { slugify, slugifyArray } = require('slug.js');
 
-slugify('asd 123 &@# abc').then((response) => {
-  console.log(response);
-}).catch((error) => {
-  console.error(error);
-});
+(async () => {
+  try {
+    const slug = await slugify('asd 123 &@# abc');
+    console.log(slug);
 
-slugifyArray(['asdas @!# 123', '123 456 789 ABC DEF GHI']).then((response) => {
-  console.log(response);
-}).catch((error) => {
-  console.error(error);
-});
+    const slugArray = await slugifyArray(['asdas @!# 123', '123 456 789 ABC DEF GHI']);
+    console.log(slugArray);
+  } catch (error) {
+    console.error(error);
+  }
+})();
 ```
 
-### Response example
-````
-asd-123-abc
-
-[ 'asdas-123', '123-456-789-abc-def-ghi' ]
-````
-
-### Built With
+# Built With
 * [Node.js](https://nodejs.org/en/)
 
-### Authors
-* **Giovani de Oliveira** - [xxgicoxx](https://github.com/xxgicoxx)
+# Authors
+* [xxgicoxx](https://github.com/xxgicoxx)
 
-### Acknowledgments
-* [FlatIcon](https://www.flaticon.com/) - Icon
+# Acknowledgments
+* [FlatIcon](https://www.flaticon.com/)
