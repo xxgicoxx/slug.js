@@ -15,15 +15,17 @@ npm install slug.js
 
 # Example
 ```javascript
-const { slugify, slugifyArray } = require('slug.js');
+const Slug = require('slug.js');
+
+const slug = new Slug();
 
 (async () => {
   try {
-    const slug = await slugify('asd 123 &@# abc');
-    console.log(slug);
+    const slugify = await slug.slugify('asd 123 &@# abc');
+    console.log(slugify);
 
-    const slugArray = await slugifyArray(['asdas @!# 123', '123 456 789 ABC DEF GHI']);
-    console.log(slugArray);
+    const slugifyArray = await slug.slugifyArray(['asdas @!# 123', '123 456 789 ABC DEF GHI']);
+    console.log(slugifyArray);
   } catch (error) {
     console.error(error);
   }

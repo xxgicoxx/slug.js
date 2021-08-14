@@ -1,11 +1,9 @@
-/**
- * Slug string
- *
- * @param {!string} string string to slug
- * @returns {Promise} return Promise
- */
-async function slugify(string = '') {
-  try {
+class SlugService {
+  async slugify(string) {
+    if (!string) {
+      throw new Error("'string' cannot be empty");
+    }
+
     const map = {
       a: /[\xE0-\xE6]/g,
       A: /[\xC0-\xC6]/g,
@@ -44,31 +42,17 @@ async function slugify(string = '') {
     }
 
     return string;
-  } catch (ex) {
-    throw new Error(ex);
+  }
+
+  async slugifyArray(array) {
+    if (!array || array.length == 0) {
+      throw new Error("'array' cannot be empty");
+    }
+
+    const slugs = array.map((e) => this.slugify(e.toString()));
+
+    return Promise.all(slugs);
   }
 }
 
-/**
- * Slug array of string
- *
- * @param {!string[]} array Array to slug
- * @returns {Promise} return Promise
- */
-async function slugifyArray(array = []) {
-  try {
-    const slugs = array.map(async (e) => {
-      const slug = await slugify(e);
-      return slug;
-    });
-
-    return Promise.all(slugs).then((response) => response).catch(() => []);
-  } catch (ex) {
-    throw new Error(ex);
-  }
-}
-
-module.exports = {
-  slugify,
-  slugifyArray,
-};
+module.exports = SlugService;
