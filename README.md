@@ -2,7 +2,7 @@
 Node.js package for slug string.
 
 <p align="center">
-  <img src="https://i.imgur.com/YHCWihh.png">
+  <img src="assets/imgs/slug.png">
 </p>
 
 # Prerequisites
