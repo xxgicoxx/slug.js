@@ -12,7 +12,7 @@ class SlugController {
    *
    * @returns {Promise} Promise
    */
-   slugify(string) {
+  slugify(string) {
     return this._service.slugify(string);
   }
 
@@ -23,7 +23,7 @@ class SlugController {
    *
    * @returns {Promise} Promise
    */
-   slugifyArray(array) {
+  slugifyArray(array) {
     return this._service.slugifyArray(array);
   }
 }

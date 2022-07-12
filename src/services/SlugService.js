@@ -45,7 +45,7 @@ class SlugService {
   }
 
   async slugifyArray(array) {
-    if (!array || array.length == 0) {
+    if (!array || array.length === 0) {
       throw new Error("'array' cannot be empty");
     }
 
