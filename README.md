@@ -5,6 +5,10 @@ Node.js package for slug string.
   <img src="assets/imgs/slug.png">
 </p>
 
+# Features
+* Slug string
+* Slug array
+
 # Prerequisites
 * [Node.js](https://nodejs.org/en/)
 

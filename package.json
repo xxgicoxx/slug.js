@@ -1,7 +1,7 @@
 {
   "name": "slug.js",
   "displayName": "slug.js",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Node.js package for slug string",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",

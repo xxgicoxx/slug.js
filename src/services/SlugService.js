@@ -1,7 +1,9 @@
+const { constants } = require('../utils');
+
 class SlugService {
   async slugify(string) {
     if (!string) {
-      throw new Error("'string' cannot be empty");
+      throw new Error(constants.MESSAGE_STRING_CANNOT_EMPTY);
     }
 
     const map = {
@@ -46,7 +48,7 @@ class SlugService {
 
   async slugifyArray(array) {
     if (!array || array.length === 0) {
-      throw new Error("'array' cannot be empty");
+      throw new Error(constants.MESSAGE_ARRAY_CANNOT_EMPTY);
     }
 
     const slugs = array.map((e) => this.slugify(e.toString()));
